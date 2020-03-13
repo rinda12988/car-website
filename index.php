@@ -13,8 +13,11 @@ class Menu{
 }
 
 $toyota86 = new Menu('TOYOTA86');
-
 $lexusLc500 = new Menu('LEXUSLC500');
+$audi = new Menu('AUDI');
+$impreza = new Menu('IMPREZA');
+
+$cars = array($toyota86,$lexusLc500,$audi,$impreza);
 
 
 ?>
@@ -33,8 +36,9 @@ $lexusLc500 = new Menu('LEXUSLC500');
   <div class = "menu-wrapper container">
     <h1 class = "logo">Car Sports</h1>
     <div class = "menu-items">
-      
-
+      <?php foreach($cars as $car): ?>
+        <p><?php echo $car->name ?></p>
+      <?php endforeach ?>
     </div>
   </div>
   
