@@ -17,16 +17,11 @@ $toyota86 = new Menu('TOYOTA86');
 $lexusLc500 = new Menu('LEXUSLC500');
 
 
-// echo $toyota86->name;
-
-// echo $lexusLc500->name;
-
-
-echo $toyota86->hello();
-echo '<br>';
-echo $lexusLc500->hello();
-
-
 ?>
+
+<p><?php echo $toyota86->name; ?></p>
+<p><?php echo $lexusLc500->name; ?></p>
+
+
 
 
