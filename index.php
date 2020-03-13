@@ -3,23 +3,23 @@
 class Menu{
   public $name;
 
-  public function __construct(){
-    echo "a menu was created";
+  public function __construct($name){
+    $this->name = $name;
   }
 
   public function hello(){
-    echo 'Im '.$this->name;
+    echo 'I\'m '.$this->name;
   }
 }
 
-$toyota86 = new Menu();
-echo '<br>';
-$lexusLc500 = new Menu();
-echo '<br>';
+$toyota86 = new Menu('TOYOTA86');
 
-$toyota86->name = 'toyota86';
+$lexusLc500 = new Menu('LEXUSLC500');
 
-$lexusLc500->name = 'lexusLc500';
+
+// echo $toyota86->name;
+
+// echo $lexusLc500->name;
 
 
 echo $toyota86->hello();
