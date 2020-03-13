@@ -27,12 +27,14 @@ $lexusLc500 = new Menu('LEXUSLC500');
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Car website</title>
   <link rel = "stylesheet" type = "text/css" href = "stylesheet.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class = "menu-wrapper container">
     <h1 class = "logo">Car Sports</h1>
     <div class = "menu-items">
       
+
     </div>
   </div>
   
