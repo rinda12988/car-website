@@ -3,15 +3,19 @@
 class Menu{
   public $name;
 
+  public function __construct(){
+    echo "a menu was created";
+  }
+
   public function hello(){
     echo 'Im '.$this->name;
   }
 }
 
 $toyota86 = new Menu();
-
+echo '<br>';
 $lexusLc500 = new Menu();
-
+echo '<br>';
 
 $toyota86->name = 'toyota86';
 
