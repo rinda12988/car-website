@@ -18,7 +18,13 @@ require_once('data.php');
     <h1 class = "logo">Car Sports</h1>
     <div class = "menu-items">
       <?php foreach($cars as $car): ?>
-        <p><?php echo $car->name ?></p>
+
+        <img src ="<?php echo $car->image ?>" >
+
+        <h3><?php echo $car->name ?></h3>
+
+        <p class = "price">CAD<?php echo $car->price ?></p>
+        
       <?php endforeach ?>
     </div>
   </div>
