@@ -1,24 +1,5 @@
 <?php 
-
-class Menu{
-  public $name;
-
-  public function __construct($name){
-    $this->name = $name;
-  }
-
-  public function hello(){
-    echo 'I\'m '.$this->name;
-  }
-}
-
-$toyota86 = new Menu('TOYOTA86');
-$lexusLc500 = new Menu('LEXUSLC500');
-$audi = new Menu('AUDI');
-$impreza = new Menu('IMPREZA');
-
-$cars = array($toyota86,$lexusLc500,$audi,$impreza);
-
+require_once('data.php');
 
 ?>
 
