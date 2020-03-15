@@ -23,7 +23,7 @@ require_once('data.php');
 
         <h3><?php echo $car->name ?></h3>
 
-        <p class = "price">CAD<?php echo $car->price ?></p>
+        <p class = "price">CAD <?php echo $car->getTaxIncludedPrice() ?> (tax include)</p>
 
       <?php endforeach ?>
     </div>

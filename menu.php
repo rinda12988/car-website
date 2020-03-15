@@ -11,9 +11,11 @@ class Menu{
       $this->image = $image;
     }
   
-    public function hello(){
-      echo 'I\'m '.$this->name;
+    public function getTaxIncludedPrice(){
+        return $this->price * 1.12;
     }
   }
+
+  
 
 ?>
