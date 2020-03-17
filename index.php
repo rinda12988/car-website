@@ -19,9 +19,9 @@ require_once('data.php');
     <div class = "menu-items">
       <?php foreach($cars as $car): ?>
 
-        <img src ="<?php echo $car->image ?>" style = "max-width:50%; height:auto;" >
+        <img src ="<?php echo $car->getImage() ?>" style = "max-width:50%; height:auto;" >
 
-        <h3><?php echo $car->name ?></h3>
+        <h3><?php echo $car->getName() ?></h3>
 
         <p class = "price">CAD$<?php echo $car->getTaxIncludedPrice() ?> (Tax include)</p>
 
