@@ -24,14 +24,14 @@ h2, h3, h4, h5, h6 {
   }
 
 
-  .menu-items{
+  /* .menu-items{
     display:flex;
     flex-wrap:wrap;
   }
 
   .menu-items img{
     flex:auto;
-    width:25%;
+    width:50%;
     border:violet 2px solid;
 
-  }
+  } */

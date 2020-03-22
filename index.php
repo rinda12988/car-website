@@ -25,6 +25,8 @@ require_once('data.php');
 
         <p class = "price">CAD$<?php echo $car->getTaxIncludedPrice() ?> (Tax include)</p>
 
+        <p>Order quantity:<?php echo $car->getOrderCount() ?></p>
+
       <?php endforeach ?>
     </div>
   </div>
