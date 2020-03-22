@@ -16,19 +16,24 @@ require_once('data.php');
 <body>
   <div class = "menu-wrapper container">
     <h1 class = "logo">Car Sports</h1>
+    <form action = "conform.php" method = "post">
     <div class = "menu-items">
       <?php foreach($cars as $car): ?>
+        <div class = "menu-item">
 
-        <img src ="<?php echo $car->getImage() ?>" style = "max-width:50%; height:auto;" >
+         <img src ="<?php echo $car->getImage() ?>" style = "max-width:50%; height:auto;" >
 
-        <h3><?php echo $car->getName() ?></h3>
+         <h3><?php echo $car->getName() ?></h3>
 
-        <p class = "price">CAD$<?php echo $car->getTaxIncludedPrice() ?> (Tax include)</p>
+         <p class = "price">CAD$<?php echo $car->getTaxIncludedPrice() ?> (Tax include)</p>
 
-        <p>Order quantity:<?php echo $car->getOrderCount() ?></p>
+         <input type = "text" value = "0" name = "<?php echo $car->getName() ?>">
 
+        </div>
       <?php endforeach ?>
     </div>
+    <input type = "submit" value = "SUBMIT">
+    </form>
   </div>
   
 </body>
